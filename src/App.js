@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import store from './store'
 import {Provider} from 'react-redux'
 import { Fragment } from 'react';
-import Carrito from './Componentes/Carrito'
-import Checkout from './Componentes/Checkout'
+import ListaCarrito from './Componentes/ListaCarrito'
 import Navbar from './Componentes/Navbar'
 import ListaProductos from './Componentes/ListaProductos'
 function App() {
@@ -20,8 +18,7 @@ function App() {
         <Navbar />
       <div className="container">
         <ListaProductos />
-        <Carrito />
-        <Checkout />
+        <ListaCarrito />
       </div>
       </Provider>
     </Fragment>
